@@ -16,8 +16,8 @@ connectDB();
 const app = express();
 
 // Middleware
-app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
   origin: process.env.NODE_ENV === "https://task-tracker-application-frontend.onrender.com",
