@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' ? 'https://your-production-domain.com' : 'http://localhost:5173',
+  origin: process.env.NODE_ENV === https://task-tracker-application-frontend.onrender.com,
   credentials: true,
 }));
 
