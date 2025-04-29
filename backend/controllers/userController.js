@@ -14,14 +14,6 @@ const authUser = asyncHandler(async (req, res) => {
   if (user && (await user.matchPassword(password))) {
     generateToken(res, user._id);
     
-    // 👇 Set the JWT cookie
-    res.cookie('jwt', token, {
-      httpOnly: true,
-      secure: true,         // Required for HTTPS (Render)
-      sameSite: 'None',     // Required for cross-site cookies
-      maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
-    });
-    
     res.status(200).json({
       _id: user._id,
       name: user.name,
