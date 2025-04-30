@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="mt-4 md:mt-0">
             <div className="flex justify-center md:justify-end space-x-6">
               <a
-                href="https://github.com/yourusername/task-tracker"
+                href="https://github.com/Sanjay-Kumar-SK-MCA-23"
                 className="text-gray-400 hover:text-gray-500"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -26,7 +26,7 @@ const Footer = () => {
               </a>
               
               <a
-                href="mailto:contact@example.com"
+                href="mailto:sandysanjay1302@gmail.com"
                 className="text-gray-400 hover:text-gray-500"
               >
                 <span className="sr-only">Email</span>
